@@ -211,8 +211,14 @@ section.light {
 
 
 
-#welcome-textbox {
-    padding-left: 5vw;
+.textbox {
+    padding: 5vw;
+}
+
+#presentation div {
+    height: 100%;
+    width: 100%;
+    align-content: center;
 }
 
 
