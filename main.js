@@ -3,7 +3,7 @@
 const header = document.getElementById("menu");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 5) {
+    if (window.scrollY > 1) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
@@ -12,11 +12,13 @@ window.addEventListener("scroll", () => {
 
 
 
+// Welcome body background
+
 const updateBackgroundPosition = (xPercent, yPercent) => {
-    section.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgb(27, 48, 75), rgb(27, 38, 60), rgb(27, 28, 45))`;
+    body.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgb(27, 48, 75), rgb(27, 38, 60), rgb(27, 28, 45))`;
 };
 
-const section = document.getElementById("welcome");
+const body = document.getElementById("body");
 
 document.addEventListener("mousemove", (event) => {
     const xPercent = (event.clientX / window.innerWidth) * 100;
@@ -32,7 +34,8 @@ window.addEventListener("load", () => {
 
 
 
-// Sélectionner chaque titre
+// Typing cursor
+
 const typingText1 = document.getElementById("typing-text-1");
 const typingText2 = document.getElementById("typing-text-2");
 const typingText3 = document.getElementById("typing-text-3");
@@ -40,7 +43,6 @@ const typingText3 = document.getElementById("typing-text-3");
 typingText2.classList.add("no-blink");
 typingText3.classList.add("no-blink");
 
-// Écouter la fin de chaque animation pour arrêter le clignotement
 typingText1.addEventListener("animationend", () => {
     typingText1.classList.add("no-blink");
     typingText2.classList.remove("no-blink");

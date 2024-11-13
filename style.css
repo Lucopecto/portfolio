@@ -15,6 +15,19 @@
 
 
 
+body {
+    background-size: 200% 200%;
+}
+
+
+
+
+
+
+
+
+
+
 header {
     background-color: rgba(0, 20, 40, 0);
     height: 8vh;
@@ -43,7 +56,7 @@ header {
 
 #menu li {
     height: 8vh;
-    padding: 0 4vw;
+    padding: 0.2vh 4vw 0 4vw;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -117,6 +130,21 @@ header {
 
 
 
+a .line {
+    background-color: white;
+    height: 0.2vh;
+    margin-left: 50%;
+    margin-right: 50%;
+    transition: ease-in-out 0.2s;
+}
+
+li:hover a .line {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+
 
 
 
@@ -125,10 +153,11 @@ header {
 
 
 section {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 90vh;
+    height: 80vh;
+}
+
+section.light {
+    background-color: aliceblue;
 }
 
 
@@ -140,7 +169,8 @@ section {
     align-items: center;
     justify-content: left;
     color: white;
-    font-size: 2em;
+    height: 90vh;
+    font-size: 2vw;
     background-size: 200% 200%;
 }
 
@@ -221,4 +251,18 @@ section {
 
 .no-blink {
     border-right: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    height: 20vh;
 }
