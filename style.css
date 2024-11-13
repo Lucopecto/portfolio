@@ -1,5 +1,4 @@
 * {
-    color: white;
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
@@ -17,6 +16,33 @@
 
 body {
     background-size: 200% 200%;
+}
+
+
+
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 3vw;
+}
+
+h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.white-text {
+    color: white;
 }
 
 
@@ -170,30 +196,23 @@ section.light {
     justify-content: left;
     color: white;
     height: 90vh;
-    font-size: 2vw;
     background-size: 200% 200%;
+}
+
+
+
+#welcome h1 {
+    border-right: 3px solid white;
+}
+
+#welcome h2 {
+    border-right: 3px solid white;
 }
 
 
 
 #welcome-textbox {
     padding-left: 5vw;
-}
-
-
-
-#welcome-textbox h1 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white;
-    font-weight: bold;
-}
-
-#welcome-textbox h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white;
-    font-weight: 100;
 }
 
 
@@ -251,6 +270,39 @@ section.light {
 
 .no-blink {
     border-right: none !important;
+}
+
+
+
+
+
+
+
+
+
+#presentation {
+    font-size: 1vw;
+    list-style-type: none;
+    overflow: hidden;
+    font-weight: 500;
+    transition: linear 100ms;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#photo {
+    width: 50%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+#photo img {
+    height: 70%;
 }
 
 
